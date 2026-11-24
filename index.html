@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <title>Pécule</title>
+    <meta name="description" content="Pécule — suivez vos dépenses, vos budgets et votre épargne. Vos données restent sur votre téléphone." />
+    <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Pécule" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      // Applique le thème avant le premier rendu pour éviter tout flash.
+      try {
+        var s = JSON.parse(localStorage.getItem('pecule:v1') || 'null')
+        var t = s && s.settings && s.settings.theme
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-D1hxZfVq.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D_perDvJ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

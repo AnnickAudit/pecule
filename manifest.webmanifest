@@ -1,0 +1,24 @@
+{
+  "name": "Pécule",
+  "short_name": "Pécule",
+  "description": "Suivez vos dépenses, vos budgets et votre épargne. Vos données restent sur votre téléphone.",
+  "lang": "fr",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#171512",
+  "theme_color": "#F3EFE6",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Opérations", "url": "./#/operations" },
+    { "name": "Budgets", "url": "./#/budgets" }
+  ]
+}
